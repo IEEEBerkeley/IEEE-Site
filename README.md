@@ -15,6 +15,5 @@ So we need to map :80 within the docker -> :8081 outside the container
 
 On server, run `docker build . -t website`
 
-hi
 
 On server, run `docker run -p 8081:80 -d --restart always <Image ID>`
