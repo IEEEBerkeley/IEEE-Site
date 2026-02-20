@@ -1540,6 +1540,15 @@ section,
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  height: 350px;
+}
+
+.team .team-member .member-img img.img-fluid {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover;
+  object-position: center;
 }
 
 .team .team-member .member-img-invisible {
