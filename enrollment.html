@@ -38,8 +38,13 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home<br></a></li>
-          <li><a href="decals.html">Decals</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown active"><a href="#"><span>Decals</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="decals.html">Course Websites</a></li>
+              <li><a href="enrollment.html" class="active">Enrollment</a></li>
+            </ul>
+          </li>
           <li><a href="index.html#portfolio">Events</a></li>
           <li><a href="committees.html">Committees</a></li>
           <li><a href="https://forms.gle/AaAZvggia7kBkkdh7" target="_blank" rel="noopener noreferrer">Feedback</a></li>
@@ -64,24 +69,32 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="project-item h-100">
               <div class="project-content">
-                <h3><i class="bi bi-activity me-2"></i>HOPE Enrollment</h3>
+                <h3><i class="bi bi-cpu me-2"></i>HOPE Enrollment</h3>
                 <p>Hands-On PCB Engineering — introduction to PCB design.</p>
-                <!-- TODO: replace href with the current HOPE enrollment form URL -->
-                <a href="#" class="read-more">HOPE Enrollment Form (coming soon) <i class="bi bi-arrow-right"></i></a>
+                <a href="https://berkie.ee/hope-fa26-apply" class="read-more" target="_blank" rel="noopener noreferrer">HOPE Enrollment Form <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="project-item h-100">
               <div class="project-content">
-                <h3><i class="bi bi-cpu-fill me-2"></i>APE Enrollment</h3>
+                <h3><i class="bi bi-lightning-charge me-2"></i>APE Enrollment</h3>
                 <p>Advanced PCB Engineering — builds on HOPE with high-speed digital, RF, and power topics.</p>
-                <!-- TODO: replace href with the current APE enrollment form URL -->
-                <a href="#" class="read-more">APE Enrollment Form (coming soon) <i class="bi bi-arrow-right"></i></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5g-3gW607pRnvrHP8LvSQpNNXDh2jOt9vG_2Hf93tOBKWBA/viewform?usp=header" class="read-more" target="_blank" rel="noopener noreferrer">APE Enrollment Form <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-item h-100">
+              <div class="project-content">
+                <h3><i class="bi bi-car-front me-2"></i>Micromouse Enrollment</h3>
+                <p>Build an autonomous, maze-solving robot from scratch. Enrollment happens over CalCentral.</p>
+                <span class="read-more text-muted">Enroll via CalCentral</span>
               </div>
             </div>
           </div>
