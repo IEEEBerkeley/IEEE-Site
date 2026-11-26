@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Open House | UC Berkeley IEEE</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/ieee-logo-blue.png" type="image/png">
+
+  <!-- Imported Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Imported CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Open House page styles (move into assets/css/main.css if you prefer) -->
+  <style>
+    .open-house-section .oh-card {
+      height: 100%;
+      min-height: 320px;
+      padding: 2rem;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .open-house-section .oh-card h3 {
+      margin-bottom: 1rem;
+    }
+
+    /* Slideshow card: let images fill the card edge to edge */
+    .open-house-section .oh-slideshow {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .open-house-section .oh-slideshow .swiper,
+    .open-house-section .oh-slideshow .swiper-wrapper,
+    .open-house-section .oh-slideshow .swiper-slide {
+      height: 100%;
+      min-height: 320px;
+    }
+
+    .open-house-section .oh-slideshow img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* RSVP card */
+    .open-house-section .oh-rsvp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .open-house-section .oh-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .open-house-section .oh-links a {
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .open-house-section .oh-links a:hover {
+      text-decoration: underline;
+    }
+
+    .open-house-section .oh-sponsor {
+      max-width: 420px;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+
+    .open-house-section .oh-schedule table {
+      margin-bottom: 0;
+    }
+
+    .open-house-section .oh-schedule .table-responsive {
+      max-height: 340px;
+    }
+  </style>
+</head>
+
+<body class="open-house-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <span><img src="assets/img/ieee-logo.png" alt=""></span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Decals</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="decals.html">Course Websites</a></li>
+              <li><a href="enrollment.html">Enrollment</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#portfolio">Events</a></li>
+          <li><a href="open-house.html" class="active">Open House</a></li>
+          <li><a href="committees.html">Committees</a></li>
+          <li><a href="https://forms.gle/AaAZvggia7kBkkdh7" target="_blank" rel="noopener noreferrer">Feedback</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="join.html">Join IEEE today!</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Open House Section -->
+    <section id="open-house" class="open-house-section section py-5">
+      <div class="container">
+
+        <div class="container section-title text-center" data-aos="fade-up">
+          <p class="text-center">FA26 Open House</p>
+        </div><!-- End Section Title -->
+
+        <!-- Row 1: Photo slideshow | Join us -->
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="oh-card oh-slideshow">
+              <div class="swiper open-house-swiper">
+                <div class="swiper-wrapper">
+                  <!-- Replace these placeholder images with real photos -->
+                  <div class="swiper-slide"><img src="assets/img/showcase-sign.jpg" alt="HOPE & APE Showcase Sign"></div>
+                  <div class="swiper-slide"><img src="assets/img/hope-showcase-fa24.jpg" alt="FA24 Showcase Group Photo"></div>
+                  <div class="swiper-slide"><img src="assets/img/apes-who-compute.jpg" alt="FA24 Apes Who Compute Project"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="oh-card oh-rsvp">
+              <h3>Join us for IEEE's FA26 Open House! </h3>
+              <p class="mb-4">Come celebrate students' projects, talk to the IEEE community and engineers from industry sponsors about the field, and eat some yummy appetizers!
+                If you're a student interested in attending, please fill out the RSVP form below.</p>
+              <!-- Replace # with the RSVP link -->
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScKOmaR2x6izGxtMoYIyavRYoeq8ncmVHf8hSzSMtLM8e_reQ/viewform?usp=dialog" class="btn btn-primary btn-lg px-4 py-2 text-white" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-calendar-check me-2"></i>RSVP Here
+              </a>
+
+              <!-- Past showcases: replace each # with the real link -->
+              <ul class="oh-links list-unstyled mt-4 mb-0">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-play-circle me-2"></i>FA26 Showcase
+                  </a>
+                </li>
+                <li>
+                  <a href="https://sites.google.com/berkeley.edu/hopesp26finalprojectshowcase/home?pli=1&authuser=0" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-play-circle me-2"></i>SP26 Showcase
+                  </a>
+                </li>
+                <li>
+                  <a href="https://sites.google.com/berkeley.edu/hope-ape-fall-25-final-project/home" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-play-circle me-2"></i>FA25 Showcase
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Industry sponsor note: swap in the right email address -->
+              <p class="oh-sponsor mt-5 mb-0">
+                If you are from an industry sponsor and would like to attend, please contact us at
+                <a href="mailto:industry@ieee.berkeley.edu">industry@ieee.berkeley.edu</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: About | Schedule -->
+        <div class="row gy-4 mt-1">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="oh-card oh-about">
+              <h3>About the Open House</h3>
+              <p>
+                Previously known as the HOPE & APE Showcase, the FA26 IEEE Open House will function similarly as a symposium with participants from all three IEEE DeCals:
+                HOPE, APE, and Micromouse. This semester, along with our wonderful friends at Apple, we'll be opening
+                the showcase (hence: Open House) to our fellow Berkeley students and engineers from our new industry sponsors!
+
+              </p>
+              <p class="mb-0">
+                <i class="bi bi-geo-alt-fill me-2"></i><strong>Location:</strong> Grimes Engineering Center<br>
+                <i class="bi bi-calendar-event-fill me-2"></i><strong>Date:</strong> December 11th
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="oh-card oh-schedule">
+              <h3>Schedule</h3>
+              <p class="oh-note">*appetizers will be served throughout the event</p>
+              <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Event</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Edit or duplicate rows as needed -->
+                    <tr><td>12:00 PM - 1:00PM</td><td>Check-in &amp; Micromouse Demo</td></tr>
+                    <tr><td>1:00 PM - 2:00PM</td><td>Student Panel</td></tr>
+                    <tr><td>2:00 PM - 3:30PM</td><td>APE Presentations</td></tr>
+                    <tr><td>3:30 PM - 5:00PM</td><td>Poster Presentations</td></tr>
+                    <tr><td>5:00 - 6:00PM</td><td>Alumni Mixer</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Open House Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/ieee-logo.png" alt="" class="footer-logo">
+              <div class="footer-title">
+                <span class="sitename">IEEE Student Branch</span>
+                <p>University of California, Berkeley</p>
+              </div>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>UC Berkeley IEEE</p>
+              <p>EECS Department</p>
+              <p>288 Cory Hall #1770</p>
+              <p>Berkeley, CA 94720-1772</p>
+              <p><strong>Email:</strong> <span>ieee@berkeley.edu</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="https://www.instagram.com/ieeeucb/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/ieee-ucb/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Join UC Berkeley IEEE</h4>
+            <p>Ready to get involved? Learn how to join a committee, enroll in a DeCal, and connect with our community.</p>
+            <a href="join.html" class="btn btn-large btn-primary slack-button">Join IEEE</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">2025 IEEE Student Branch At UC Berkeley</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Photo slideshow init -->
+  <script>
+    new Swiper('.open-house-swiper', {
+      loop: true,
+      speed: 600,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: '.open-house-swiper .swiper-pagination', clickable: true },
+      navigation: {
+        nextEl: '.open-house-swiper .swiper-button-next',
+        prevEl: '.open-house-swiper .swiper-button-prev'
+      }
+    });
+  </script>
+
+</body>
+
+</html>
